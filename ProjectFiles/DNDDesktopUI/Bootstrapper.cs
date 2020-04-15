@@ -28,7 +28,8 @@ namespace DNDDesktopUI
 
         protected override void Configure()//we override the BootstrapperBase Class method Configure - this method grabs all of our viewmodels automatically
         {
-            _container.Instance(_container);
+            _container.Instance(_container)
+                .PerRequest<ICharacterEndpoint, CharacterEndpoint>();//this is a per request
 
             _container
                 .Singleton<IWindowManager, WindowManager>()

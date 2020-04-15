@@ -68,5 +68,7 @@
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
     <Build Include="dbo\Stored Procedures\spUserLookup.sql" />
+    <Build Include="dbo\Tables\Character.sql" />
+    <Build Include="dbo\Stored Procedures\spCharacter_GetAll.sql" />
   </ItemGroup>
 </Project>
