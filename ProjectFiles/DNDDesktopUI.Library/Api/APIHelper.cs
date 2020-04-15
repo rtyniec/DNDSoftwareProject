@@ -13,7 +13,7 @@ namespace DNDDesktopUI.Library.Api
 {
     public class APIHelper : IAPIHelper
     {
-        private HttpClient apiClient { get; set; }//only works inside of here - lives lifespan of our class
+        private HttpClient _apiClient { get; set; }//i am going to need this outside of here...
         private ILoggedInUserModel _loggedInUser;
 
         public APIHelper(ILoggedInUserModel loggedInUser)
@@ -22,16 +22,24 @@ namespace DNDDesktopUI.Library.Api
             _loggedInUser = loggedInUser;
         }
 
+        public HttpClient ApiClient//this property can be used for other classes
+        { 
+            get
+            {
+                return _apiClient;
+            }
+        }
+
 
         private void InitializeClient()
         {
             //for this, I added the default localhost gateway to the app.config file, and added a reference for System.Configuration in the References of the UI
             string api = ConfigurationManager.AppSettings["api"];
             
-            apiClient = new HttpClient();
-            apiClient.BaseAddress = new Uri(api);
-            apiClient.DefaultRequestHeaders.Accept.Clear();
-            apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _apiClient = new HttpClient();
+            _apiClient.BaseAddress = new Uri(api);
+            _apiClient.DefaultRequestHeaders.Accept.Clear();
+            _apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         public async Task<AuthenticatedUser> Authenticate(string username, string password)
@@ -46,7 +54,7 @@ namespace DNDDesktopUI.Library.Api
             });
 
             //the URL is going to change, we are going to do it a different way
-            using (HttpResponseMessage response = await apiClient.PostAsync("/Token", data))
+            using (HttpResponseMessage response = await _apiClient.PostAsync("/Token", data))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -65,13 +73,13 @@ namespace DNDDesktopUI.Library.Api
         public async Task GetLoggedInUserInfo(string token)//will save our token info for future calls - we need to pass in our token now
         {//since the apiClient lives the lifespan of the application, we should only have to do this once
 
-            apiClient.DefaultRequestHeaders.Clear();
-            apiClient.DefaultRequestHeaders.Accept.Clear();//clear makes sure we did not add anything
-            apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            apiClient.DefaultRequestHeaders.Add("Authorization", $"Bearer { token }");//for every call, the default request headers need the token!
+            _apiClient.DefaultRequestHeaders.Clear();
+            _apiClient.DefaultRequestHeaders.Accept.Clear();//clear makes sure we did not add anything
+            _apiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _apiClient.DefaultRequestHeaders.Add("Authorization", $"Bearer { token }");//for every call, the default request headers need the token!
             //this makes sure that we will always send our credentials - YES - we use our GUID or short lived token
 
-            using (HttpResponseMessage response = await apiClient.GetAsync("/api/User"))
+            using (HttpResponseMessage response = await _apiClient.GetAsync("/api/User"))
             {
                 if(response.IsSuccessStatusCode)
                 {//since this is a singleton, we do not have to save it since it exists for the life of the app
