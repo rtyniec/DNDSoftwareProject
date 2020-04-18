@@ -14,7 +14,7 @@ namespace DNDTransfer.Library.DataAccess
         {
             SqlDataAccess sql = new SqlDataAccess();//no dependency injection here
 
-            var p = new { Id = Id };
+            var p = new { Id = Id };//ok so we pass a parameter here, which is the ID
             //only use dynamic for one assembly
             var output = sql.LoadData<UserModel, dynamic>("dbo.spUserLookup", p, "DNDData");//pass in our stored procedure, parameters, and database string name
 

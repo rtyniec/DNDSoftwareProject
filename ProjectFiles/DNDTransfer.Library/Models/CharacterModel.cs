@@ -8,8 +8,9 @@ namespace DNDTransfer.Library.Models
 {
     public class CharacterModel
     {
+        public string CharacterName { get; set; }//primary key
         public string Id { get; set; }
-        public string CharacterName { get; set; }
+        public string UserId { get; set; }
         public string Class { get; set; }
         public string Background { get; set; }
         public string Race { get; set; }

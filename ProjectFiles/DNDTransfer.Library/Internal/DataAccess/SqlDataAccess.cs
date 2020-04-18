@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DNDTransfer.Library.Internal.DataAccess
 {
-    public class SqlDataAccess
+    internal class SqlDataAccess
     {
         public string GetConnectionString(string name)//we pass the name of the connection string found in the web.config file in the API
         {

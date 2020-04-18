@@ -16,14 +16,14 @@ namespace DNDDesktopUI.Library.Api
             _apiHelper = apiHelper;
         }
 
-        public async Task<List<CharacterModel>> GetAll()
-        {
-            using (HttpResponseMessage response = await _apiHelper.ApiClient.GetAsync("/api/Character"))
-            {
+        public async Task<List<CharacterModel>> GetAll()//return a list of the data represented as a character model
+        {//remember, this returns all characters created by the USER ONLY!!!
+            using (HttpResponseMessage response = await _apiHelper.ApiClient.GetAsync("/api/Character"))//ApiClient is a property in the ApiHelper
+            {//above is where we call the api controller in the DNDTransfer project
                 if (response.IsSuccessStatusCode)
-                {//since this is a singleton, we do not have to save it since it exists for the life of the app
+                {
                     var result = await response.Content.ReadAsAsync<List<CharacterModel>>();//this will store multiple character models
-                    return result;
+                    return result;//should satisfy what we need?
                 }
                 else
                 {
