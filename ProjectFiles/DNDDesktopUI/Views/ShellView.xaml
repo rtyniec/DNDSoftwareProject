@@ -13,6 +13,7 @@
             </MenuItem>
             <MenuItem Header="_Account">
                 <MenuItem x:Name="LoginScreen" Header="_Login" />
+                <MenuItem x:Name="LoadListCharacter" Header="_LoadCharacter"/>
             </MenuItem>
         </Menu>
         <Grid>

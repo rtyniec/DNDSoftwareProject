@@ -35,5 +35,15 @@ namespace DNDDesktopUI.ViewModels
             ActivateItem(_characterVM);
             
         }
+
+        public void LoadListCharacter()
+        {
+            ActivateItem(new ListCharacterViewModel());//lets create a new instance of this.
+        }
+
+        public void LoadShowCharacter()
+        {
+            ActivateItem(new ShowCharacterViewModel());
+        }
     }
 }

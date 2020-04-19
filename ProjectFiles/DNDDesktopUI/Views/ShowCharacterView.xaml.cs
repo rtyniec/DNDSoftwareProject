@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace DNDDesktopUI.Views
 {
     /// <summary>
-    /// Interaction logic for SalesView.xaml
+    /// Interaction logic for ShowCharacterView.xaml
     /// </summary>
-    public partial class CharacterView : UserControl
+    public partial class ShowCharacterView : UserControl
     {
-        public CharacterView()
+        public ShowCharacterView()
         {
             InitializeComponent();
-        }
-
-        private void Cart_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void LoadListCharacter_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

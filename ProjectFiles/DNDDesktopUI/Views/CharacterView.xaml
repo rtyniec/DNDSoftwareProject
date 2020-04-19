@@ -21,9 +21,8 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
+            
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -32,13 +31,13 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
 
-        
 
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Main Menu"
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Main Menu"
                     FontSize="24"/>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1"
@@ -50,10 +49,27 @@
                     <TextBlock Text="{Binding CharacterName}"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-            
+
 
         </ListBox>
 
+        <Button x:Name="LoadListCharacter" Grid.Row="2" Grid.Column="2"
+                Grid.ColumnSpan="2" MinHeight="50" MaxHeight="50"
+                MinWidth="400" FontSize="20" Margin="15" Click="LoadListCharacter_Click">
+        View Your Characters
+        </Button>
+
+        <Button x:Name="LoadCreateCharacter" Grid.Row="3" Grid.Column="2"
+                Grid.ColumnSpan="2" MinHeight="50" MaxHeight="50"
+                MinWidth="400" FontSize="20" Margin="15">
+            Create A New Character
+        </Button>
+
+        <Button x:Name="LoadAbout" Grid.Row="4" Grid.Column="2"
+                Grid.ColumnSpan="2" MinHeight="50" MaxHeight="50"
+                MinWidth="400" FontSize="20" Margin="15">
+            About Page
+        </Button>
 
 
 
