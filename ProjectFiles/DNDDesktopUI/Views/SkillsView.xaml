@@ -1,0 +1,115 @@
+﻿<UserControl
+    x:Class="Dungeons_DragonsCharacterBuilder.Views.SkillsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Dungeons_DragonsCharacterBuilder.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <!--  Top-Level Grid  -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" MinHeight="300" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <!--  Header  -->
+        <StackPanel Grid.Row="0">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="24"
+                Text="Skills" />
+        </StackPanel>
+
+        <!--  Skills  -->
+        <UniformGrid
+            Grid.Row="1"
+            Grid.RowSpan="3"
+            Margin="0,10"
+            Columns="2">
+
+            <!--  Skill List  -->
+            <UniformGrid
+                Grid.Row="2"
+                Margin="5,0"
+                Columns="1">
+
+                <CheckBox Content="Acrobatics" />
+
+                <CheckBox Content="Animal Herding" />
+
+                <CheckBox Content="Arcana" />
+
+                <CheckBox Content="Athletics" />
+
+                <CheckBox Content="Deception" />
+
+                <CheckBox Content="History" />
+
+                <CheckBox Content="Insight" />
+
+                <CheckBox Content="Intimidation" />
+
+                <CheckBox Content="Investigation" />
+
+                <CheckBox Content="Medicine" />
+
+                <CheckBox Content="Nature" />
+
+                <CheckBox Content="Perception" />
+
+                <CheckBox Content="Performance" />
+
+                <CheckBox Content="Persuasion" />
+
+                <CheckBox Content="Religion" />
+
+                <CheckBox Content="Sleight of Hand" />
+
+                <CheckBox Content="Stealth" />
+
+                <CheckBox Content="Survival" />
+            </UniformGrid>
+
+            <!--  Skill Description Panel  -->
+            <StackPanel>
+                <TextBlock x:Name="SkillName" Text="Skill Name" />
+
+                <TextBlock x:Name="SkillAbility" Text="Skill Ability" />
+
+                <TextBlock x:Name="SkillDescription" Text="Skill Description" />
+            </StackPanel>
+        </UniformGrid>
+
+
+        <!--  Previous and Next Buttons  -->
+        <Grid Grid.Row="4" Margin="0,0,0,-0.4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+
+            <!--  Column One  -->
+            <Button Grid.Column="0">
+                <TextBlock Text="Previous" />
+            </Button>
+
+            <!--  Column Two  -->
+            <Button Grid.Column="1">
+                <TextBlock Text="Next" />
+            </Button>
+        </Grid>
+
+    </Grid>
+
+</UserControl>

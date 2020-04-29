@@ -86,11 +86,29 @@
     <Compile Include="EventModels\LogOnEvent.cs" />
     <Compile Include="EventModels\ViewCharacterListEvent.cs" />
     <Compile Include="Helpers\PasswordBoxHelper.cs" />
+    <Compile Include="ViewModels\AbilityScoreViewModel.cs" />
+    <Compile Include="ViewModels\BondsFlawsIdealsViewModel.cs" />
+    <Compile Include="ViewModels\CharacterOverviewViewModel.cs" />
+    <Compile Include="ViewModels\ClassChoiceViewModel.cs" />
     <Compile Include="ViewModels\ListCharacterViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\CharacterViewModel.cs" />
+    <Compile Include="ViewModels\RaceChoiceViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="ViewModels\ShowCharacterViewModel.cs" />
+    <Compile Include="ViewModels\SkillsViewModel.cs" />
+    <Compile Include="Views\AbilityScoreView.xaml.cs">
+      <DependentUpon>AbilityScoreView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BondsFlawsIdealsView.xaml.cs">
+      <DependentUpon>BondsFlawsIdealsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CharacterOverviewView.xaml.cs">
+      <DependentUpon>CharacterOverviewView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClassChoiceView.xaml.cs">
+      <DependentUpon>ClassChoiceView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ListCharacterView.xaml.cs">
       <DependentUpon>ListCharacterView.xaml</DependentUpon>
     </Compile>
@@ -99,6 +117,9 @@
     </Compile>
     <Compile Include="Views\CharacterView.xaml.cs">
       <DependentUpon>CharacterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RaceChoiceView.xaml.cs">
+      <DependentUpon>RaceChoiceView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
@@ -110,6 +131,25 @@
     <Compile Include="Views\ShowCharacterView.xaml.cs">
       <DependentUpon>ShowCharacterView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SkillsView.xaml.cs">
+      <DependentUpon>SkillsView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\AbilityScoreView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\BondsFlawsIdealsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CharacterOverviewView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ClassChoiceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\ListCharacterView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -122,6 +162,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\RaceChoiceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -129,6 +173,10 @@
     <Page Include="Views\ShowCharacterView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SkillsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
