@@ -1,4 +1,5 @@
 ﻿using Caliburn.Micro;
+using DNDDesktopUI;
 using Dungeons_DragonsCharacterBuilder.EventModels;
 using System;
 using System.Collections.Generic;
@@ -20,12 +21,12 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
 
         public void MoveToClassChoice()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(4));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.CLASS_CHOICE));
         }
 
         public void MoveToTitleScreen()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(1));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.TITLE_SCREEN));
         }
     }
 }

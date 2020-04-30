@@ -84,8 +84,10 @@
     </ApplicationDefinition>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="EventModels\LogOnEvent.cs" />
+    <Compile Include="EventModels\MoveViewsEventModel.cs" />
     <Compile Include="EventModels\ViewCharacterListEvent.cs" />
     <Compile Include="Helpers\PasswordBoxHelper.cs" />
+    <Compile Include="StaticNumbers.cs" />
     <Compile Include="ViewModels\AbilityScoreViewModel.cs" />
     <Compile Include="ViewModels\BondsFlawsIdealsViewModel.cs" />
     <Compile Include="ViewModels\CharacterOverviewViewModel.cs" />

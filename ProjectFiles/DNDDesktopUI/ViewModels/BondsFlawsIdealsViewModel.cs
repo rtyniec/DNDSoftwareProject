@@ -9,5 +9,11 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
 {
     class BondsFlawsIdealsViewModel : Screen
     {
+        private IEventAggregator _events;
+
+        public BondsFlawsIdealsViewModel(IEventAggregator events)
+        {
+            _events = events;
+        }
     }
 }

@@ -9,5 +9,11 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
 {
     class SkillsViewModel : Screen
     {
+        private IEventAggregator _events;
+
+        public SkillsViewModel(IEventAggregator events)
+        {
+            _events = events;
+        }
     }
 }
