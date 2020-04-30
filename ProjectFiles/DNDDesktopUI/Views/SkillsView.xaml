@@ -100,12 +100,12 @@
             </Grid.RowDefinitions>
 
             <!--  Column One  -->
-            <Button Grid.Column="0">
+            <Button x:Name="GoToPreviousScreen" Grid.Column="0">
                 <TextBlock Text="Previous" />
             </Button>
 
             <!--  Column Two  -->
-            <Button Grid.Column="1">
+            <Button x:Name="GoToNextScreen" Grid.Column="1">
                 <TextBlock Text="Next" />
             </Button>
         </Grid>

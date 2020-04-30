@@ -35,7 +35,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
         //Moves to Class Choice Screen 
         public void GoToPreviousScreen()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.TITLE_SCREEN));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.CLASS_CHOICE));
         }
 
         //Moves to Skills Screen 

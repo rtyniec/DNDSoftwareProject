@@ -1,4 +1,6 @@
 ﻿using Caliburn.Micro;
+using DNDDesktopUI;
+using Dungeons_DragonsCharacterBuilder.EventModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,18 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
         public BondsFlawsIdealsViewModel(IEventAggregator events)
         {
             _events = events;
+        }
+
+        //Moves to Skills  
+        public void GoToPreviousScreen()
+        {
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.SKILLS));
+        }
+
+        //Moves to Character Overview 
+        public void GoToNextScreen()
+        {
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.OVERVIEW));
         }
     }
 }
