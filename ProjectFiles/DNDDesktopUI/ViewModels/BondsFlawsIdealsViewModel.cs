@@ -21,13 +21,13 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
         //Moves to Skills  
         public void GoToPreviousScreen()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.SKILLS));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticMembers.SKILLS));
         }
 
         //Moves to Character Overview 
         public void GoToNextScreen()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.OVERVIEW));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticMembers.OVERVIEW));
         }
     }
 }

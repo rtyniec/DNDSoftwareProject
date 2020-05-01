@@ -36,7 +36,7 @@ namespace DNDDesktopUI.ViewModels
 
 		public void LoadCreateCharacter()
 		{
-			_events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.RACE_CHOICE));
+			_events.PublishOnUIThread(new MoveViewsEventModel(StaticMembers.RACE_CHOICE));
 		}
 
 		private BindingList<CharacterModel> _characters;

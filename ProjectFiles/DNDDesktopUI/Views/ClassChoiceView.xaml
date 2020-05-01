@@ -29,7 +29,10 @@
 
             <!--  Column One, Row One  -->
             <UniformGrid Grid.Column="0" Columns="1">
-                <Button Content="Barbarian" FontSize="18" />
+                <Button
+                    x:Name="BarbarianButton"
+                    Content="Barbarian"
+                    FontSize="18" />
 
                 <Button Content="Bard" FontSize="18" />
 

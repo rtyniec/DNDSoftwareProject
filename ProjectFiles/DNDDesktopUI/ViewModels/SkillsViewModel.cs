@@ -21,13 +21,13 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
         //Moves to Ability Scores   
         public void GoToPreviousScreen()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.ABILITY_SCORES));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticMembers.ABILITY_SCORES));
         }
 
         //Moves to Bonds, Flaws, Ideals  
         public void GoToNextScreen()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.BONDS_FLAWS_IDEALS));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticMembers.BONDS_FLAWS_IDEALS));
         }
     }
 }

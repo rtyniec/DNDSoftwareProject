@@ -46,26 +46,26 @@ namespace DNDDesktopUI.ViewModels
         {
             switch (message._viewNum)
             {
-                case StaticNumbers.TITLE_SCREEN:
+                case StaticMembers.TITLE_SCREEN:
                     break;
-                case StaticNumbers.CHAR_LIST:
+                case StaticMembers.CHAR_LIST:
                     break;
-                case StaticNumbers.RACE_CHOICE:
+                case StaticMembers.RACE_CHOICE:
                     ActivateItem(new RaceChoiceViewModel(_events));
                     break;
-                case StaticNumbers.CLASS_CHOICE:
+                case StaticMembers.CLASS_CHOICE:
                     ActivateItem(new ClassChoiceViewModel(_events));
                     break;
-                case StaticNumbers.ABILITY_SCORES:
+                case StaticMembers.ABILITY_SCORES:
                     ActivateItem(new AbilityScoreViewModel(_events));
                     break;
-                case StaticNumbers.SKILLS:
+                case StaticMembers.SKILLS:
                     ActivateItem(new SkillsViewModel(_events));
                     break;
-                case StaticNumbers.BONDS_FLAWS_IDEALS:
+                case StaticMembers.BONDS_FLAWS_IDEALS:
                     ActivateItem(new BondsFlawsIdealsViewModel(_events));
                     break;
-                case StaticNumbers.OVERVIEW:
+                case StaticMembers.OVERVIEW:
                     ActivateItem(new CharacterOverviewViewModel(_events));
                     break;
                 default:

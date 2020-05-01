@@ -21,12 +21,12 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
 
         public void MoveToClassChoice()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.CLASS_CHOICE));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticMembers.CLASS_CHOICE));
         }
 
         public void MoveToTitleScreen()
         {
-            _events.PublishOnUIThread(new MoveViewsEventModel(StaticNumbers.TITLE_SCREEN));
+            _events.PublishOnUIThread(new MoveViewsEventModel(StaticMembers.TITLE_SCREEN));
         }
     }
 }

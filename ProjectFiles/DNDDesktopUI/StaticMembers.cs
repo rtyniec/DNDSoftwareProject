@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DNDDesktopUI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,19 @@ using System.Threading.Tasks;
 
 namespace DNDDesktopUI
 {
-    static class StaticNumbers
+    static class StaticMembers
     {
+        /*
+         * Classes 
+         */
+        public static CharacterClass Barbarian = new CharacterClass("Barbarian",
+                                                             "A Brute, Raw-Powered Warrior who revels in the heat of battle.",
+                                                             "Rage - The Barbarian works themselves into a rage, giving them an array of bonuses in close combat.");
+        
+        /*
+         * View Screen Numbers 
+         */
+        
         //Title Screen 
         public const int TITLE_SCREEN = 1;
 
