@@ -97,24 +97,24 @@
                         Text="Alignment:" />
                     <ComboBox VerticalAlignment="Center" FontSize="18">
 
-                        <ComboBoxItem Content="Lawful Good" />
-                        <ComboBoxItem Content="Lawful Neutral" />
-                        <ComboBoxItem Content="Lawful Evil" />
-                        <ComboBoxItem Content="Neutral Good" />
-                        <ComboBoxItem Content="True Neutral" />
-                        <ComboBoxItem Content="Neutral Evil" />
-                        <ComboBoxItem Content="Chaotic Good" />
-                        <ComboBoxItem Content="Chaotic Neutral" />
-                        <ComboBoxItem Content="Chaotic Evil" />
+                        <ComboBoxItem x:Name="LawfulGood" Content="Lawful Good" />
+                        <ComboBoxItem x:Name="LawfulNeutral" Content="Lawful Neutral" />
+                        <ComboBoxItem x:Name="LawfulEvil" Content="Lawful Evil" />
+                        <ComboBoxItem x:Name="NeutralGood" Content="Neutral Good" />
+                        <ComboBoxItem x:Name="TrueNeutral" Content="True Neutral" />
+                        <ComboBoxItem x:Name="NeutralEvil" Content="Neutral Evil" />
+                        <ComboBoxItem x:Name="ChaoticGood" Content="Chaotic Good" />
+                        <ComboBoxItem x:Name="ChaoticNeutral" Content="Chaotic Neutral" />
+                        <ComboBoxItem x:Name="ChaoticEvil" Content="Chaotic Evil" />
 
                     </ComboBox>
                 </UniformGrid>
 
                 <!--  Alignment Information  -->
                 <TextBlock
+                    x:Name="AlignmentInfo"
                     Grid.Row="1"
-                    FontSize="14"
-                    Text="Alignment Information" />
+                    FontSize="14" />
 
                 <!--  Background Selector  -->
                 <UniformGrid Grid.Row="3" Columns="2">
@@ -144,9 +144,9 @@
 
                 <!--  Background Explination  -->
                 <TextBlock
+                    x:Name="BackgroundInfo"
                     Grid.Row="4"
-                    FontSize="14"
-                    Text="Background Information" />
+                    FontSize="14" />
             </Grid>
         </UniformGrid>
 

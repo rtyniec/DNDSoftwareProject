@@ -88,6 +88,7 @@
     <Compile Include="EventModels\ViewCharacterListEvent.cs" />
     <Compile Include="Helpers\PasswordBoxHelper.cs" />
     <Compile Include="Models\CharacterClass.cs" />
+    <Compile Include="Models\CharacterRace.cs" />
     <Compile Include="StaticMembers.cs" />
     <Compile Include="ViewModels\AbilityScoreViewModel.cs" />
     <Compile Include="ViewModels\BondsFlawsIdealsViewModel.cs" />

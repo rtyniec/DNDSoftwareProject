@@ -1,5 +1,6 @@
 ﻿using Caliburn.Micro;
 using DNDDesktopUI;
+using DNDDesktopUI.Models;
 using Dungeons_DragonsCharacterBuilder.EventModels;
 using Dungeons_DragonsCharacterBuilder.Views;
 using System;
@@ -13,20 +14,23 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
 {
     class ClassChoiceViewModel : Screen
     {
+         /*
+         * Properties 
+         */
+        public string ClassName { get; set; } = "Choose Your Class";
+        public string ClassDescription { get; set; }
+        public string MainMechanic { get; set; }
+        public CharacterClass ChosenClass { get; set; }
+        
+        /*
+         * Member 
+         */
         private IEventAggregator _events;
 
         public ClassChoiceViewModel(IEventAggregator events)
         {
             _events = events;
         }
-
-
-        /*
-         * Properties 
-         */
-        public string ClassName { get; set; } = "Choose Your Class";
-        public string ClassDescription { get; set; }
-        public string MainMechanic { get; set; }
 
         /*
          * Activities of this View 
@@ -36,6 +40,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Barbarian._CharacterClassName;
             ClassDescription = StaticMembers.Barbarian._CharacterClassDescription;
             MainMechanic = StaticMembers.Barbarian._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Barbarian;
         }
 
         public void BardButton()
@@ -43,6 +48,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Bard._CharacterClassName;
             ClassDescription = StaticMembers.Bard._CharacterClassDescription;
             MainMechanic = StaticMembers.Bard._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Bard;
         }
 
         public void ClericButton()
@@ -50,6 +56,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Cleric._CharacterClassName;
             ClassDescription = StaticMembers.Cleric._CharacterClassDescription;
             MainMechanic = StaticMembers.Cleric._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Cleric;
         }
 
         public void DruidButton()
@@ -57,6 +64,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Druid._CharacterClassName;
             ClassDescription = StaticMembers.Druid._CharacterClassDescription;
             MainMechanic = StaticMembers.Druid._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Druid;
         }
 
         public void FighterButton()
@@ -64,6 +72,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Fighter._CharacterClassName;
             ClassDescription = StaticMembers.Fighter._CharacterClassDescription;
             MainMechanic = StaticMembers.Fighter._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Fighter;
         }
 
         public void MonkButton()
@@ -71,6 +80,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Monk._CharacterClassName;
             ClassDescription = StaticMembers.Monk._CharacterClassDescription;
             MainMechanic = StaticMembers.Monk._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Monk;
         }
 
         public void PaladinButton()
@@ -78,6 +88,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Paladin._CharacterClassName;
             ClassDescription = StaticMembers.Paladin._CharacterClassDescription;
             MainMechanic = StaticMembers.Paladin._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Paladin;
         }
 
         public void RangerButton()
@@ -85,6 +96,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Ranger._CharacterClassName;
             ClassDescription = StaticMembers.Ranger._CharacterClassDescription;
             MainMechanic = StaticMembers.Ranger._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Ranger;
         }
 
         public void RogueButton()
@@ -92,6 +104,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Rogue._CharacterClassName;
             ClassDescription = StaticMembers.Rogue._CharacterClassDescription;
             MainMechanic = StaticMembers.Rogue._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Rogue;
         }
 
         public void SorcererButton()
@@ -99,6 +112,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Sorcerer._CharacterClassName;
             ClassDescription = StaticMembers.Sorcerer._CharacterClassDescription;
             MainMechanic = StaticMembers.Sorcerer._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Sorcerer;
         }
 
         public void WarlockButton()
@@ -106,6 +120,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Warlock._CharacterClassName;
             ClassDescription = StaticMembers.Warlock._CharacterClassDescription;
             MainMechanic = StaticMembers.Warlock._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Warlock;
         }
 
         public void WizardButton()
@@ -113,6 +128,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
             ClassName = StaticMembers.Wizard._CharacterClassName;
             ClassDescription = StaticMembers.Wizard._CharacterClassDescription;
             MainMechanic = StaticMembers.Wizard._CharacterMainMechanic;
+            ChosenClass = StaticMembers.Wizard;
         }
 
         /*

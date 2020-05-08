@@ -30,23 +30,50 @@
 
             <!--  Column One, Row One  -->
             <UniformGrid Grid.Column="0" Columns="1">
-                <Button Content="Dwarf" FontSize="18" />
+                <Button
+                    x:Name="DwarfButton"
+                    Content="Dwarf"
+                    FontSize="18" />
 
-                <Button Content="Elf" FontSize="18" />
+                <Button
+                    x:Name="ElfButton"
+                    Content="Elf"
+                    FontSize="18" />
 
-                <Button Content="Halfling" FontSize="18" />
+                <Button
+                    x:Name="HalflingButton"
+                    Content="Halfling"
+                    FontSize="18" />
 
-                <Button Content="Human" FontSize="18" />
+                <Button
+                    x:Name="HumanButton"
+                    Content="Human"
+                    FontSize="18" />
 
-                <Button Content="Dragonborn" FontSize="18" />
+                <Button
+                    x:Name="DragonbornButton"
+                    Content="Dragonborn"
+                    FontSize="18" />
 
-                <Button Content="Gnome" FontSize="18" />
+                <Button
+                    x:Name="GnomeButton"
+                    Content="Gnome"
+                    FontSize="18" />
 
-                <Button Content="Half-Elf" FontSize="18" />
+                <Button
+                    x:Name="HalfElfButton"
+                    Content="Half-Elf"
+                    FontSize="18" />
 
-                <Button Content="Half-Orc" FontSize="18" />
+                <Button
+                    x:Name="HalfOrcButton"
+                    Content="Half-Orc"
+                    FontSize="18" />
 
-                <Button Content="Tiefling" FontSize="18" />
+                <Button
+                    x:Name="TieflingButton"
+                    Content="Tiefling"
+                    FontSize="18" />
 
             </UniformGrid>
 
