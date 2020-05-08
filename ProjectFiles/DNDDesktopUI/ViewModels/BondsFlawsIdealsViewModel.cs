@@ -11,8 +11,10 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
 {
     class BondsFlawsIdealsViewModel : Screen
     {
-        public String AlignmentInfo { get; set; } = "Pick a Alignment";
-        public String BackgroundInfo { get; set; } = "Pick a Background";
+        public string AlignmentInfo { get; set; } = "Pick a Alignment";
+        public string BackgroundInfo { get; set; } = "Pick a Background";
+        public string ChosenAlignment { get; set; }
+        public string ChosenBackground { get; set; }
 
         private IEventAggregator _events;
 
@@ -24,49 +26,121 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
         /*
          * Activities of this screen 
          */
+
+         //Alignments 
          public void LawfulGood()
          {
-            AlignmentInfo = StaticMembers.LawfulGood;
-         }
+            AlignmentInfo = ChosenAlignment = StaticMembers.LawfulGood;
+        }
 
         public void LawfulNeutral()
         {
-            AlignmentInfo = StaticMembers.LawfulNeutral;
+            AlignmentInfo = ChosenAlignment = StaticMembers.LawfulNeutral;
         }
         public void LawfulEvil()
         {
-            AlignmentInfo = StaticMembers.LawfulEvil;
+            AlignmentInfo = ChosenAlignment = StaticMembers.LawfulEvil;
         }
 
         public void NeutralGood()
         {
-            AlignmentInfo = StaticMembers.NeutralGood;
+            AlignmentInfo = ChosenAlignment = StaticMembers.NeutralGood;
         }
 
         public void TrueNeutral()
         {
-            AlignmentInfo = StaticMembers.TrueNeutral;
+            AlignmentInfo = ChosenAlignment = StaticMembers.TrueNeutral;
         }
 
         public void NeutralEvil()
         {
-            AlignmentInfo = StaticMembers.NeutralEvil;
+            AlignmentInfo = ChosenAlignment = StaticMembers.NeutralEvil;
         }
 
         public void ChaoticGood()
         {
-            AlignmentInfo = StaticMembers.ChaoticGood;
+            AlignmentInfo = ChosenAlignment = StaticMembers.ChaoticGood;
         }
 
         public void ChaoticNeutral()
         {
-            AlignmentInfo = StaticMembers.ChaoticNeutral;
+            AlignmentInfo = ChosenAlignment = StaticMembers.ChaoticNeutral;
         }
 
         public void ChaoticEvil()
         {
-            AlignmentInfo = StaticMembers.ChaoticEvil;
+            AlignmentInfo = ChosenAlignment = StaticMembers.ChaoticEvil;
         }
+
+        //Background 
+        public void Acolyte()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Acoylte;
+        }
+
+        public void Charlatan()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Charlatan;
+        }
+
+        public void Criminal()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Criminal;
+        }
+
+        public void Entertainer()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Entertainer;
+        }
+
+        public void FolkHero()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.FolkHero;
+        }
+
+        public void GuildArtisan()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.GuildArtisan;
+        }
+
+        public void Hermit()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Hermit;
+        }
+
+        public void Noble()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Noble;
+        }
+
+        public void Outlander()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Outlander;
+        }
+
+        public void Sage()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Sage;
+        }
+
+        public void Sailor()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Sailor;
+        }
+
+        public void Soldier()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Soldier;
+        }
+
+        public void Urchin()
+        {
+            BackgroundInfo = ChosenBackground = StaticMembers.Urchin;
+        }
+
+        /*
+         * Navigation 
+         */
 
         //Moves to Skills  
         public void GoToPreviousScreen()

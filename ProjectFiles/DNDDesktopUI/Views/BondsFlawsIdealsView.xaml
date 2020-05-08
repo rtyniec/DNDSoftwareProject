@@ -125,19 +125,19 @@
                         Text="Background:" />
                     <ComboBox VerticalAlignment="Center" FontSize="18">
 
-                        <ComboBoxItem Content="Acolyte" />
-                        <ComboBoxItem Content="Charlatan" />
-                        <ComboBoxItem Content="Criminal" />
-                        <ComboBoxItem Content="Entertainer" />
-                        <ComboBoxItem Content="Folk Hero" />
-                        <ComboBoxItem Content="Guild Artisan" />
-                        <ComboBoxItem Content="Hermit" />
-                        <ComboBoxItem Content="Noble" />
-                        <ComboBoxItem Content="Outlander" />
-                        <ComboBoxItem Content="Sage" />
-                        <ComboBoxItem Content="Sailor" />
-                        <ComboBoxItem Content="Soldier" />
-                        <ComboBoxItem Content="Urchin" />
+                        <ComboBoxItem x:Name="Acolyte" Content="Acolyte" />
+                        <ComboBoxItem x:Name="Charlatan" Content="Charlatan" />
+                        <ComboBoxItem x:Name="Criminal" Content="Criminal" />
+                        <ComboBoxItem x:Name="Entertainer" Content="Entertainer" />
+                        <ComboBoxItem x:Name="FolkHero" Content="Folk Hero" />
+                        <ComboBoxItem x:Name="GuildArtisan" Content="Guild Artisan" />
+                        <ComboBoxItem x:Name="Hermit" Content="Hermit" />
+                        <ComboBoxItem x:Name="Noble" Content="Noble" />
+                        <ComboBoxItem x:Name="Outlander" Content="Outlander" />
+                        <ComboBoxItem x:Name="Sage" Content="Sage" />
+                        <ComboBoxItem x:Name="Sailor" Content="Sailor" />
+                        <ComboBoxItem x:Name="Soldier" Content="Soldier" />
+                        <ComboBoxItem x:Name="Urchin" Content="Urchin" />
 
                     </ComboBox>
                 </UniformGrid>
