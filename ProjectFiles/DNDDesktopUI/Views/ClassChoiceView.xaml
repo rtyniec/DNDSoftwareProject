@@ -34,27 +34,60 @@
                     Content="Barbarian"
                     FontSize="18" />
 
-                <Button Content="Bard" FontSize="18" />
+                <Button
+                    x:Name="BardButton"
+                    Content="Bard"
+                    FontSize="18" />
 
-                <Button Content="Cleric" FontSize="18" />
+                <Button
+                    x:Name="ClericButton"
+                    Content="Cleric"
+                    FontSize="18" />
 
-                <Button Content="Druid" FontSize="18" />
+                <Button
+                    x:Name="DruidButton"
+                    Content="Druid"
+                    FontSize="18" />
 
-                <Button Content="Fighter" FontSize="18" />
+                <Button
+                    x:Name="FighterButton"
+                    Content="Fighter"
+                    FontSize="18" />
 
-                <Button Content="Monk" FontSize="18" />
+                <Button
+                    x:Name="MonkButton"
+                    Content="Monk"
+                    FontSize="18" />
 
-                <Button Content="Paladin" FontSize="18" />
+                <Button
+                    x:Name="PaladinButton"
+                    Content="Paladin"
+                    FontSize="18" />
 
-                <Button Content="Ranger" FontSize="18" />
+                <Button
+                    x:Name="RangerButton"
+                    Content="Ranger"
+                    FontSize="18" />
 
-                <Button Content="Rogue" FontSize="18" />
+                <Button
+                    x:Name="RogueButton"
+                    Content="Rogue"
+                    FontSize="18" />
 
-                <Button Content="Sorcerer" FontSize="18" />
+                <Button
+                    x:Name="SorcererButton"
+                    Content="Sorcerer"
+                    FontSize="18" />
 
-                <Button Content="Warlock" FontSize="18" />
+                <Button
+                    x:Name="WarlockButton"
+                    Content="Warlock"
+                    FontSize="18" />
 
-                <Button Content="Wizard" FontSize="18" />
+                <Button
+                    x:Name="WizardButton"
+                    Content="Wizard"
+                    FontSize="18" />
             </UniformGrid>
 
 
